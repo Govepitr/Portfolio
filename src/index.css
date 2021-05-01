@@ -11,3 +11,378 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Triforce";
+  src: url("/Assets/fonts/TriSymbol.ttf") format("ttf");
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,900);
+
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0px 1px 0px 1px;}
+  body {
+    width: unset;
+    background-color:rgb(254, 244 ,234);
+  }
+
+:any-link  {
+  text-decoration: none;   
+}
+
+
+.rest-of-word {
+  color: rgb(132, 183, 204);
+  font-family: fantasy;
+  font-size: 35px;
+}
+
+.navbar-brand {
+  color: rgb(169, 169, 189) !important;
+  text-shadow: 5px 5px 4px rgb(31, 56, 71);
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+}
+
+.navbar-brand {
+  width: 10%;
+  height: 30%;
+  border-style: outset;
+  background-color: rgb(65, 64, 99, 0.5);
+}
+
+.nav-link {
+  color: rgb(132 183 204) !important;
+  font-family: 'fantasy';
+  font-size: 38px;
+  font-weight:bold;
+  text-shadow: -2px 4px 4px rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.dropdown-menu.show {
+  background-color: rgb(18, 22, 37);
+}
+
+.dropdown-item {
+  color: rgb(82, 117, 133);
+  transition: 0.3s;}
+  .dropdown-item:hover {
+    background-color: rgb(18, 22, 37);
+    color: cyan;}
+    .fa-github:hover {
+      -webkit-animation: github 1s ease-in-out forwards;
+      animation: github 1s ease-in-out forwards;
+      background-color: rgb(18, 22, 37);}
+      .fa-linkedin:hover {
+        -webkit-animation: linkedin 1s ease-in-out forwards;
+        animation: linkedin 1s ease-in-out forwards;
+      }
+  
+  
+  @-webkit-keyframes github {
+    0% {color: white;} 
+    50% {color: #333333;}
+    100% {color: #3CA2A2;}
+  }
+  @-webkit-keyframes linkedin {
+    0% {color: white;}
+    50% {color: #4875B4;}
+    100% {color: #3CA2A2;}
+  }
+
+  h1 {
+    font-size: 2em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+#topContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: unset;
+}
+  
+
+.marker {
+  max-width: unset;
+  height: unset 100vh;
+}
+
+
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-width:inherit;
+  height:inherit;
+  animation: reveal 5s ease-in-out 3s alternate infinite;
+  animation-fill-mode: backwards;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/AMV.svg");
+}
+
+@keyframes reveal {
+  from {
+    background-color: black;
+  }
+  to {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      url("./images/AMV.svg")
+    );
+  }
+}
+
+.heroic {
+  text-align: end;
+  color: floralwhite;
+  text-shadow: 5px 5px 4px rgb(118, 150, 163);
+  font-family: "fantasy";
+  font-style: italic;
+  font-size: xx-large;
+  padding-right: 25px;
+  padding-top: 25%;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+}
+
+#biopic {
+  position: relative !important;
+  height: 281px !important;
+  width: 450px !important;
+  margin: 0 auto !important;
+}
+.div h2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+#biopic img {
+  margin-right: auto;
+  margin-left: auto;  
+  -webkit-transition: opacity 2s ease-in-out !important;
+  -moz-transition: opacity 2s ease-in-out !important;
+  -o-transition: opacity 2s ease-in-out !important;
+  transition: opacity 2s ease-in-out !important;
+}
+.top.rounded {
+  position: absolute !important;
+  right: 24.5%!important;
+}
+
+#biopic img.top:hover {
+  opacity: 0 !important;
+}
+
+
+
+.text-end p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  margin: 1px;
+  text-align:center;
+  padding: 0% 15% 0 15%;
+}
+
+span#dan{
+  font-family: 'Triforce';
+  font-weight:500!important;
+}
+/* Work */
+
+.carousel-inner {
+  margin: auto;
+  width:min-content;}
+  .carousel-item img{
+    margin:auto;
+    width: 461px;
+    height: 322px;
+    object-fit: cover;
+}
+.carousel.pointer-event {
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  
+
+}
+
+/* Contact Me*/
+
+#contact-me {
+  display: grid;
+  margin: 10px 10px 10px 20px;
+}
+#contact {
+  -webkit-animation-name: color-transition;
+	animation-name: color-transition;
+	-webkit-animation-duration: 25s;
+	animation-duration: 25s;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+
+
+
+
+@-webkit-keyframes color-transition {
+	0% {
+		background-color: #ec18b2;
+		border-color: #ec18b2;
+	}
+	20% {
+		background-color: #ec6d18;
+		border-color: #ec6d18;
+	}
+	40% {
+		background-color: #78d421;
+		border-color: #78d421;
+	}
+	80% {
+		background-color: #5af798;
+		border-color: #5af798;
+	}
+  100% {
+    background-color: #7be7d7;
+    border-color: #7be7d7;
+  }
+}
+
+@keyframes color-transition {
+	0% {
+		background-color: #ec18b2;
+		border-color: #ec18b2;
+	}
+	20% {
+		background-color: #ec6d18;
+		border-color: #ec6d18;
+	}
+	40% {
+		background-color: #78d421;
+		border-color: #78d421;
+	}
+	80% {
+		background-color: #5af798;
+		border-color: #5af798;
+	}
+  100% {
+    background-color: #7be7d7;
+    border-color: #7be7d7;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+.card-body {  
+  font-weight:bolder;
+  border-radius: 25px;  
+}
+.card  {
+  text-decoration: none;  
+  border: 3px solid var(--shadow-border-color);
+  font-size: 1.5rem;  
+  justify-content: space-around; 
+  align-items: center;
+}
+
+
+.email {
+  font-size: 28px!important;
+  font-family: 'Triforce'!important;
+  color: #006400!important;
+  display:inline-block;
+  position:relative;
+}
+.email:hover {
+  text-decoration:none;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  .navbar-brand {
+    display: none;
+  }
+  .hero-image {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: reveal 5s ease-in-out 3s alternate infinite;
+    animation-fill-mode: backwards;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/AMV.svg");
+  }
+
+  @keyframes reveal {
+    from {
+      background-color: black;
+    }
+    to {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        url("./images/AMV.svg")
+      );
+    }
+  }
+
+  #biopic {
+    position: relative !important;
+    height: 281px !important;
+    width: 450px !important;
+    margin: 0 auto !important;
+  }
+
+  #biopic img {
+    
+    
+    -webkit-transition: opacity 2s ease-in-out !important;
+    -moz-transition: opacity 2s ease-in-out !important;
+    -o-transition: opacity 2s ease-in-out !important;
+    transition: opacity 2s ease-in-out !important;
+  }
+  .top.rounded {
+    position: absolute !important;
+    
+  }
+
+  #biopic img.top:hover {
+    opacity: 0 !important;
+  }
+  .carousel-inner {
+    margin: auto;
+    width:min-content;}
+    .carousel-item img{
+      margin:auto;
+      object-fit: auto;
+  }
+  
+}
+
+@media screen and (max-width: 501px) {
+  .carousel-inner {
+    margin: auto;
+    width:auto;}
+    .carousel-item img{
+      margin:auto;
+      object-fit: auto;
+  }
+}
